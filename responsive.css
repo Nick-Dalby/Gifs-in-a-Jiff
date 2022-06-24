@@ -1,0 +1,25 @@
+.video {
+  width: 100%;
+}
+
+.videos {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.search-input {
+  width: 94vw;
+  line-height: 1;
+  height: 88px;
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    font-size: 32px;
+  }
+
+  .search-hint {
+    font-size: 18px;
+  }
+}

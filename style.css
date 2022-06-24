@@ -1,0 +1,95 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 5vh 3vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.top, .middle, .indicators {
+  text-align: center;
+  position: relative;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  text-align: center;
+  color: #fff;
+}
+
+.search-input {
+  font-size: 72px;
+}
+
+.search-input::placeholder {
+  color: #323232;
+}
+
+.search-clear, .spinner {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.search-clear {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.video {
+  grid-area: 1/1;
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+}
+
+.full-area {
+  grid-area: 1/1;
+}
+
+.search-hint, .spinner {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show-hint .search-hint,
+.loading .spinner,
+.has-results .search-clear {
+  opacity: 1;
+}
+
+.loading .search-hint,
+.has-results .title {
+  opacity: 0;
+}
+
+.title {
+  transition: opacity 0.5s ease;
+}
+
+.giphy-logo {
+  width: 180px;
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
